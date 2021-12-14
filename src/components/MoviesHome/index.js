@@ -5,7 +5,7 @@ import MovieCard from '../MovieCard'
 import './index.css'
 
 class MoviesHome extends Component {
-  state = {videosList: []}
+  state = {videosList: [], name: '' || 'anonymous'}
 
   componentDidMount() {
     this.getAccess()
@@ -55,7 +55,8 @@ class MoviesHome extends Component {
   }
 
   render() {
-    const {videosList} = this.state
+    const {videosList, name} = this.state
+    console.log(name)
     return (
       <div className="videos-container">
         <h1 className="videos-heading">Youtube Videos</h1>

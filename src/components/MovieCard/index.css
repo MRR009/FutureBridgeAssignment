@@ -57,3 +57,22 @@
   font-size: 14px;
   font-weight: 500;
 }
+
+.rating-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.rating {
+  margin-left: 15px;
+  color: #61605e;
+  font-family: 'Roboto';
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.rating-star {
+  color: #f5c20a;
+  font-size: 16px;
+}

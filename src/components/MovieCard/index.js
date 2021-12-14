@@ -1,8 +1,13 @@
+import {AiFillStar} from 'react-icons/ai'
+
 import './index.css'
 
 const MovieCard = props => {
   const {eachVideo} = props
-  const {channel, id, publishedAt, thumbnailUrl, title, viewCount} = eachVideo
+  const {channel, publishedAt, thumbnailUrl, title, viewCount} = eachVideo
+
+  const randomNumber = Math.floor(Math.random() * 10)
+  // console.log(randomNumber)
 
   return (
     <div className="movie-card-container">
@@ -20,6 +25,10 @@ const MovieCard = props => {
           <div className="view-published">
             <p className="view-count">{viewCount} Views</p>
             <p className="published-date">{publishedAt}</p>
+            <div className="rating-container">
+              <p className="rating">{randomNumber}</p>
+              <AiFillStar className="rating-star" />
+            </div>
           </div>
         </div>
       </div>
