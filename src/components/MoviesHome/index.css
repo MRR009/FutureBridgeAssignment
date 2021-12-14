@@ -1,0 +1,22 @@
+.videos-container {
+  padding-left: 20px;
+}
+
+.videos-heading {
+  color: #e81c1c;
+  font-family: 'Bree Serif';
+  font-size: 28px;
+  font-style: italic;
+  margin-left: 10px;
+}
+
+.videos-list-container {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.list-item {
+  list-style-type: none;
+  width: 33%;
+}
